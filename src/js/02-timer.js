@@ -90,6 +90,3 @@ function addLeadingZero(value){
 };
 
 // console.dir(spanSec)
-
-
-
