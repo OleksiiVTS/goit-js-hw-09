@@ -49,11 +49,17 @@ function checkDate(selectedDateSecond){
 
 function startTimer(){
     if (timer) {
+        Notify.warning('The timer has already started!');
         return
     }
     timerId = setInterval(() => {
         const dateNaw = new Date();
         timer = selectedDateSecond - dateNaw;
+        if (timer < 0) {
+            Notify.success('Timer is completed!');
+            clearInterval(timerId);
+            return
+        }
         addItem(timer);
     }, 1000);  
 };
