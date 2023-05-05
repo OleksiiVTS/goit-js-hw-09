@@ -23,7 +23,7 @@ function getInputValue() {
 
 function createPromise(position, delay) {
   const shouldResolve = Math.random() > 0.3;
-  obg = {position, delay};
+  const obg = {position, delay};
   const promise = new Promise((resolve, reject) => {
       if (shouldResolve) {
         resolve(obg);
