@@ -13,7 +13,7 @@ function beforeCreatePromise(event) {
 };
 
 function getInputValue() {
-  return data = {
+  return dataForm = {
     delay: Number(form.elements.delay.value),
     step: Number(form.elements.step.value),
     amount: Number(form.elements.amount.value),
