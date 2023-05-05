@@ -13,11 +13,12 @@ function beforeCreatePromise(event) {
 };
 
 function getInputValue() {
-  return dataForm = {
+  const dataForm = {
     delay: Number(form.elements.delay.value),
     step: Number(form.elements.step.value),
     amount: Number(form.elements.amount.value),
   };
+  return dataForm;
 };
 
 function createPromise(position, delay) {
